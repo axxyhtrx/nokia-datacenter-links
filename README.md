@@ -2,7 +2,7 @@
 
 Ссылки для тех, кто только начинает разбираться с SR Linux и Nokia DC-стеком. 
 
-
+- [Сертификация специалистов](https://www.nokia.com/networks/training/dcf/certification/) - официальные учебные курсы и сертификация 
 ---
 
 ## Containerlab
