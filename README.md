@@ -33,6 +33,11 @@ GitHub:
 
 NOS на базе Linux, gNMI-first, с поддержкой кастомных агентов. Приложения портированы с SR OS. Образ публичный, без регистрации и лицензий.
 
+## Data sheets (nokia.com)
+
+- [7220 IXR-D series](https://www.nokia.com/asset/207599/) — D1/D2/D2L/D3/D3L/D4/D5, до 12.8 Tb/s, leaf/spine
+- [7220 IXR-H series](https://www.nokia.com/asset/210990/) — H2/H3/H4, до 51.2 Tb/s, 800GE, AI/cloud fabric
+
 ### Документация
 
 - [documentation.nokia.com/srlinux](https://documentation.nokia.com/srlinux/) — официальная дока, с выбором версии
@@ -71,6 +76,15 @@ NOS на базе Linux, gNMI-first, с поддержкой кастомных 
 ## EDA (Event Driven Automation)
 
 Платформа для автоматизации DC-фабрики. Работает поверх Kubernetes, управляет SR Linux через gNMI. Модель декларативная — описываешь что хочешь, EDA разбирается как это сделать на железе. Есть транзакционная модель с откатом, git как база данных состояния.
+
+## Nokia Validated Designs (NVD)
+
+Набор готовых рецептов по построению фабрик для датацентров для compute, storage и GPU(ai).
+
+- [nokia.com/ip-networks/validated-designs](https://www.nokia.com/ip-networks/validated-designs/) — главная страница программы
+- [Data Center Networks Design Hub](https://documentation.nokia.com/data-center-networks-design-hub/index.html) — все NVD и Reference Designs, документация
+- [github.com/nokia/nokia-validated-designs](https://github.com/nokia/nokia-validated-designs) — репозиторий с digital twin топологиями на containerlab
+- [NVD: Collapsed Spine EVPN-VXLAN (PDF)](https://documentation.nokia.com/cgi-bin/dbaccessfilename.cgi/3HE21913AAAATQZZA_V1_Nokia%20Validated%20Design:%20Collapsed%20Spine%20EVPN%20VXLAN.pdf) — конкретный дизайн с EDA, SR Linux 25.3.2
 
 ### C чего начать
 
