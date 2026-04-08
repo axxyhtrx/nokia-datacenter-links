@@ -90,6 +90,7 @@ GitHub:
 - [Try EDA](https://docs.eda.dev/25.12/getting-started/try-eda/) — `make try-eda` и через ~10 минут готовая инсталляция EDA c фабрикой из трёх узлов SR Linux 
 - [Tour of EDA](https://docs.eda.dev/25.12/tour-of-eda/) — последовательный разбор концепций с упражнениями
 - [EDA в Codespaces](https://docs.eda.dev/25.12/software-install/non-production/codespaces/) — если хочется попробовать в браузере с установкой в 1 клик.
+- [EQL](https://documentation.nokia.com/eda/24-12/books/user/queries.html) - синтаксис языка eql
 
 ### Архитектура
 
