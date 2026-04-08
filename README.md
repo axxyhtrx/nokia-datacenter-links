@@ -77,13 +77,13 @@ NOS на базе Linux, gNMI-first, с поддержкой кастомных 
 - [docs.eda.dev](https://docs.eda.dev/25.12/) — документация (редирект с корня на актуальную версию)
 - [Try EDA](https://docs.eda.dev/25.12/getting-started/try-eda/) — `make try-eda` и через ~10 минут готовый Playground с Digital Twin из трёх SR Linux нод
 - [Tour of EDA](https://docs.eda.dev/25.12/tour-of-eda/) — последовательный разбор концепций с упражнениями
-- [EDA в Codespaces](https://docs.eda.dev/25.12/software-install/non-production/codespaces/) — если хочется попробовать без своей железки
+- [EDA в Codespaces](https://docs.eda.dev/25.12/software-install/non-production/codespaces/) — если хочется попробовать в браузере с установкой в 1 клик.
 
 ### Архитектура
 
 - [Introducing EDA](https://documentation.nokia.com/eda/24-12/books/user/introduction.html) — официальный обзор: ConfigEngine, транзакции, git-as-database
 - [Nodes](https://docs.eda.dev/25.12/tour-of-eda/nodes/) — как EDA работает с нодами, Digital Twin, deviation management
-- [The beginning of an era](https://docs.eda.dev/blog/the-beginning-of-an-era-eda/) — стартовый пост с NFD demo, хорошо объясняет мотивацию
+- [The beginning of an era](https://docs.eda.dev/blog/the-beginning-of-an-era-eda/) — стартовый пост с NFD demo, хорошо объясняет мотивацию создания продукта и его отличие от других систем
 - [Nokia.com — EDA](https://www.nokia.com/data-center-networks/data-center-fabric/event-driven-automation/) — маркетинговый обзор, но с полезной структурой
 
 ### Разработка приложений под EDA
