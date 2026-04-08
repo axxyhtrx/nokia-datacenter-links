@@ -1,10 +1,7 @@
-# nokia-datacenter-links
-Набор ссылок по теме Nokia Datacenter
-
-
-# Nokia DC Stack — ресурсы
+# Набор ссылок по теме Nokia Datacenter
 
 Ссылки для тех, кто только начинает разбираться с SR Linux и Nokia DC-стеком. 
+
 
 ---
 
