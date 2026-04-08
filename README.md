@@ -7,18 +7,18 @@
 
 ## Containerlab
 
-Утилита для поднятия сетевых топологий в контейнерах. Сделана Nokia-инженерами, полностью в открытом доступе.
+Утилита для поднятия сетевых топологий в контейнерах. Сделана по большей части Nokia-инженерами, полностью в открытом доступе.
 
-- [containerlab.dev](https://containerlab.dev/) — сайт
+- [containerlab.dev](https://containerlab.dev/) — сайт проекта
 - [Quick Start](https://containerlab.dev/quickstart/) — установка и первая топология с SR Linux + cEOS за 5 минут
 - [Установка](https://containerlab.dev/install/) — deb/rpm, curl-скрипт, есть поддержка macOS и WSL
 - [Supported Kinds](https://containerlab.dev/manual/kinds/) — что вообще можно запускать (SR Linux, SR OS, Arista cEOS, Cisco XRd и др.)
-- [Topology Definition](https://containerlab.dev/manual/topo-def-file/) — синтаксис clab-файла
-- [Lab Catalog](https://containerlab.dev/lab-examples/lab-examples/) — примеры топологий, идут вместе с пакетом
+- [Topology Definition](https://containerlab.dev/manual/topo-def-file/) — синтаксис clab-файла с описанием возможностей
+- [Lab Catalog](https://containerlab.dev/lab-examples/lab-examples/) — примеры сетевых топологий
 
-Если нет под рукой Linux-машины:
-- [Codespaces](https://containerlab.dev/manual/codespaces/) — запуск в облаке бесплатно, прямо в браузере
-- [clabernetes](https://containerlab.dev/manual/clabernetes/) — если хочется гонять топологии поверх k8s(например в облаке или если нужно запустить много)
+Если нет под рукой Linux-машины для установки containerlab:
+- [Codespaces](https://containerlab.dev/manual/codespaces/) — запуск в облаке бесплатно, прямо в браузере/
+- [clabernetes](https://containerlab.dev/manual/clabernetes/) — если хочется запускать топологии поверх k8s (например в арендованном облаке или если нужно запустить много симуляторов за один раз)
 
 GitHub:
 - [srl-labs/containerlab](https://github.com/srl-labs/containerlab)
@@ -28,32 +28,32 @@ GitHub:
 
 ## SR Linux
 
-NOS на базе Linux, gNMI-first, с поддержкой кастомных агентов. Приложения портированы с SR OS. Образ публичный, без регистрации и лицензий.
+Сетевая операционная система на базе Linux. Приложения портированы с SR OS. Образ публичный, без регистрации и лицензий.
+Симуляторы могут мимикрировать под любую модель из портфолио 7720 IXR.
 
 ## Data sheets (nokia.com)
 
 - [7220 IXR-D series](https://www.nokia.com/asset/207599/) — D1/D2/D2L/D3/D3L/D4/D5, до 12.8 Tb/s, leaf/spine
-- [7220 IXR-H series](https://www.nokia.com/asset/210990/) — H2/H3/H4, до 51.2 Tb/s, 800GE, AI/cloud fabric
+- [7220 IXR-H series](https://www.nokia.com/asset/210990/) — H2/H3/H4, до 51.2 Tb/s, 800GE, AI/cloud fabric, spine.
 
 ### Документация
 
-- [documentation.nokia.com/srlinux](https://documentation.nokia.com/srlinux/) — официальная дока, с выбором версии
+- [documentation.nokia.com/srlinux](https://documentation.nokia.com/srlinux/) — официальная документация, с выбором версии. Обязательно попробуйте нажать ASK Ai в нижнем правом углу страницы. Поддерживает несколько языков для вопросов и ответов. Отвечает со ссылками на документацию. 
 - `doc.srlinux.dev/25-10` — короткий URL для конкретной версии, удобно в закладки
-- [Release Notes](https://doc.srlinux.dev/rn25-10-1) — что появилось в последнем релизе
+- [Release Notes](https://doc.srlinux.dev/rn25-10-1) — что появилось в конкретном релизе.
 
 ### Обучение
 
-- [learn.srlinux.dev](https://learn.srlinux.dev/) — основной учебный ресурс, там туториалы, концепции и лабы
-- [Get Started](https://learn.srlinux.dev/get-started/) — начать отсюда: образ, CLI, первые gNMI-запросы
-- [Блог](https://learn.srlinux.dev/blog/) — статьи от команды Nokia DevRel, там много практики
-- [YouTube Nokia](https://www.youtube.com/@nokianetworks) — видео по SR Linux
+- [learn.srlinux.dev](https://learn.srlinux.dev/) — основной учебный ресурс, туториалы, концепции и лаборатории.
+- [Get Started](https://learn.srlinux.dev/get-started/) — начать отсюда: образ, CLI, первые gNMI-запросы для автоматизации
+- [Блог](https://learn.srlinux.dev/blog/) — статьи от команды Nokia, там много практики и теории
+- [YouTube Nokia]([https://www.youtube.com/@nokianetworks](https://www.youtube.com/watch?v=KTJ0QQj_Mds&list=PLgKNvl454BxeMKg6aDM3xAad_RqxUnXsR)) — серия видео по SR Linux
 
 ### Управление и автоматизация
 
 - [JSON-RPC Basics](https://learn.srlinux.dev/tutorials/programmability/json-rpc/basics/) — как работает JSON-RPC интерфейс, примеры через curl
 - [Ansible + SR Linux](https://learn.srlinux.dev/tutorials/programmability/ansible/using-nokia-srlinux-collection/) — nokia.srlinux collection, gNMI vs JSON-RPC
-- [gnmic](https://gnmic.openconfig.net/) — CLI-клиент для gNMI на Go, очень удобен в работе
-- [srlinux-yang-models](https://github.com/nokia/srlinux-yang-models) — все YANG-модели
+- [gnmic](https://gnmic.openconfig.net/) — CLI-клиент для gNMI на Go, очень удобен в работе. Написан внутри Nokia, стал проектом openconfig.
 - [yang.srlinux.dev](https://yang.srlinux.dev/) — браузер YANG-моделей онлайн
 
 ### DC Fabric / EVPN
@@ -66,13 +66,14 @@ NOS на базе Linux, gNMI-first, с поддержкой кастомных 
 
 ### NDK
 
-- [ndk-greeter-go](https://github.com/srl-labs/ndk-greeter-go) — hello-world NDK агент на Go, отправная точка если хочется писать свои агенты
+- [ndk-greeter-go](https://github.com/srl-labs/ndk-greeter-go) — hello-world NDK агент на Go, отправная точка если хочется писать своих агентов(приложения) под SRL
+
 
 ---
 
 ## EDA (Event Driven Automation)
 
-Платформа для автоматизации DC-фабрики. Работает поверх Kubernetes, управляет SR Linux через gNMI. Модель декларативная — описываешь что хочешь, EDA разбирается как это сделать на железе. Есть транзакционная модель с откатом, git как база данных состояния.
+Платформа для автоматизации жизненного цикла DC-фабрики. Работает поверх Kubernetes, управляет SR Linux через gNMI. Модель декларативная — описываешь что хочешь, EDA разбирается как транслировать это в конфигурацию на железе. Есть транзакционная модель с откатом, git как база данных состояния сети и SSOT.
 
 ## Nokia Validated Designs (NVD)
 
@@ -81,12 +82,12 @@ NOS на базе Linux, gNMI-first, с поддержкой кастомных 
 - [nokia.com/ip-networks/validated-designs](https://www.nokia.com/ip-networks/validated-designs/) — главная страница программы
 - [Data Center Networks Design Hub](https://documentation.nokia.com/data-center-networks-design-hub/index.html) — все NVD и Reference Designs, документация
 - [github.com/nokia/nokia-validated-designs](https://github.com/nokia/nokia-validated-designs) — репозиторий с digital twin топологиями на containerlab
-- [NVD: Collapsed Spine EVPN-VXLAN (PDF)](https://documentation.nokia.com/cgi-bin/dbaccessfilename.cgi/3HE21913AAAATQZZA_V1_Nokia%20Validated%20Design:%20Collapsed%20Spine%20EVPN%20VXLAN.pdf) — конкретный дизайн с EDA, SR Linux 25.3.2
+- [NVD: Collapsed Spine EVPN-VXLAN (PDF)](https://documentation.nokia.com/cgi-bin/dbaccessfilename.cgi/3HE21913AAAATQZZA_V1_Nokia%20Validated%20Design:%20Collapsed%20Spine%20EVPN%20VXLAN.pdf) — дизайн сети с EDA, SR Linux 25.3.2
 
 ### C чего начать
 
 - [docs.eda.dev](https://docs.eda.dev/25.12/) — документация (редирект с корня на актуальную версию)
-- [Try EDA](https://docs.eda.dev/25.12/getting-started/try-eda/) — `make try-eda` и через ~10 минут готовый Playground с Digital Twin из трёх SR Linux нод
+- [Try EDA](https://docs.eda.dev/25.12/getting-started/try-eda/) — `make try-eda` и через ~10 минут готовая инсталляция EDA c фабрикой из трёх узлов SR Linux 
 - [Tour of EDA](https://docs.eda.dev/25.12/tour-of-eda/) — последовательный разбор концепций с упражнениями
 - [EDA в Codespaces](https://docs.eda.dev/25.12/software-install/non-production/codespaces/) — если хочется попробовать в браузере с установкой в 1 клик.
 
